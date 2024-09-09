@@ -17,6 +17,8 @@
         <ul>
             <li v-for="todo, index in todoList" :key="index">{{ todo.name }}</li>
         </ul>
+        <input type="text" name="item" id="item" placeholder="Aggiungi una task!" v-model="item">
+        <button @click="Add">Invia!</button>
     </div>
 
         
