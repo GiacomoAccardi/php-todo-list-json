@@ -12,10 +12,11 @@ createApp({
         getList() {
             axios.get(this.url).then((answer) => {
                 this.todoList = answer.data;
+                console.log(this.todoList);
             });
         }
     },
-    created() {
+    mounted() {
         //faccio partire la funzione
         this.getList();
     }
