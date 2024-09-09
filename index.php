@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <script src="/script.js" type="text/javascript"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </body>
 
