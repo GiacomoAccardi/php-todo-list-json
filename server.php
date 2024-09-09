@@ -1,32 +1,7 @@
 <?php
 
-    $todolist = [
-        [
-            "id" => 1,
-            "done" => true,
-            "name" => "HTML"
-        ],
-        [
-            "id" => 2,
-            "done" => false,
-            "name" => "CSS"
-        ],
-        [
-            "id" => 3,
-            "done" => true,
-            "name" => "Responsive design"
-        ],
-        [
-            "id" => 4,
-            "done" => false,
-            "name" => "JavaScript"
-        ],
-        [
-            "id" => 5,
-            "done" => true,
-            "name" => "PHP"
-        ]
-    ];
+    $fromJson = file_get_contents("./data/to-do-list.json");
+    $todolist = json_decode($fromJson);
 
     header('content-type: application/json');
     echo json_encode($todolist);
